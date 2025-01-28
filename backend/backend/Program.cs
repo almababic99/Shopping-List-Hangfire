@@ -4,7 +4,6 @@ using Infrastructure.Repositories;
 using Application.Services;
 using Application.Interfaces;
 using Application.Config;
-using Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,22 +17,6 @@ builder.Services.AddScoped<IShoppingListRepository, ShoppingListRepository>();  
 builder.Services.AddScoped<IShoppingListService, ShoppingListService>();         // This registers the ShoppingListService as a scoped service that implements the IShoppingListService interface.
 
 builder.Services.AddMediatR(cf => cf.RegisterServicesFromAssemblies(typeof(ApplicationAssembly).Assembly));
-
-builder.Services.AddSingleton<IEndpointInstance>(sp =>
-{
-    var endpointConfiguration = new EndpointConfiguration("backend");
-
-    var transport = endpointConfiguration.UseTransport<LearningTransport>();
-
-    endpointConfiguration.UseSerialization<SystemJsonSerializer>();
-
-    var routing = endpointConfiguration.UseTransport<LearningTransport>().Routing();
-    routing.RouteToEndpoint(typeof(ShoppingListAddedMessage), "ServiceBus");
-    routing.RouteToEndpoint(typeof(ItemAddedMessage), "ServiceBus");
-    routing.RouteToEndpoint(typeof(ShopperAddedMessage), "ServiceBus");
-
-    return NServiceBus.Endpoint.Start(endpointConfiguration).GetAwaiter().GetResult(); 
-});
 
 builder.Services.AddControllers();
 

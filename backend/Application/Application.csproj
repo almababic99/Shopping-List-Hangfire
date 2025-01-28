@@ -16,4 +16,8 @@
     <PackageReference Include="NServiceBus.Extensions.Hosting" Version="3.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Jobs\" />
+  </ItemGroup>
+
 </Project>

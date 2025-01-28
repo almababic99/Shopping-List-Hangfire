@@ -10,7 +10,8 @@ namespace Infrastructure.Mappers
             return new Item
             {
                 Id = item.Id,
-                Name = item.Name
+                Name = item.Name,
+                Quantity = item.Quantity,
             };
         }
     }

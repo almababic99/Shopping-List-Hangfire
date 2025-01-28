@@ -7,12 +7,9 @@ namespace Application.Commands
     public class CreateShopperCommandHandler : IRequestHandler<CreateShopperCommand>
     {
         private readonly IShopperRepository _shopperRepository;
-        private readonly IEndpointInstance _endpointInstance;
-
-        public CreateShopperCommandHandler(IShopperRepository shopperRepository, IEndpointInstance endpointInstance)
+        public CreateShopperCommandHandler(IShopperRepository shopperRepository)
         {
             _shopperRepository = shopperRepository;
-            _endpointInstance = endpointInstance;
         }
 
         public async Task Handle(CreateShopperCommand request, CancellationToken cancellationToken)
@@ -27,14 +24,6 @@ namespace Application.Commands
             }
 
             await _shopperRepository.AddShopper(shopper);
-
-            var message = new ShopperAddedMessage
-            {
-                Message = "New shopper is added!"
-            };
-
-            Console.WriteLine($"Sending message: {message.Message}");
-            await _endpointInstance.Send("ServiceBus", message);
         }
     }
 }

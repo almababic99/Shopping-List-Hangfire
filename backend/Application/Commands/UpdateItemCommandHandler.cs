@@ -15,7 +15,7 @@ namespace Application.Commands
 
         public async Task Handle(UpdateItemCommand request, CancellationToken cancellationToken)
         {
-            var item = new Item { Id = request.Id, Name = request.Name };  // mapping dto to domain
+            var item = new Item { Id = request.Id, Name = request.Name, Quantity = request.Quantity };  // mapping dto to domain
 
             await _itemRepository.EditItem(item);
         }

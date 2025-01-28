@@ -10,7 +10,8 @@ namespace API.Mappers
             return new ItemDTO
             {
                 Id = item.Id,
-                Name = item.Name
+                Name = item.Name,
+                Quantity = item.Quantity,
             };
         }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zcp5XcybppU=",
+  "dgSpecHash": "uYy6B3eKN9U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using ServiceBus\\Shopping-List-ServiceBus\\backend\\backend\\API.csproj",
+  "projectFilePath": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\backend\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alma.babic\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\alma.babic\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

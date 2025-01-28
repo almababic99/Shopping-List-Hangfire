@@ -7,17 +7,15 @@ namespace Application.Commands
     public class CreateItemCommandHandler : IRequestHandler<CreateItemCommand>
     {
         private readonly IItemRepository _itemRepository;
-        private readonly IEndpointInstance _endpointInstance;
 
-        public CreateItemCommandHandler(IItemRepository itemRepository, IEndpointInstance endpointInstance)
+        public CreateItemCommandHandler(IItemRepository itemRepository)
         {
             _itemRepository = itemRepository;
-            _endpointInstance = endpointInstance;
         }
 
         public async Task Handle(CreateItemCommand request, CancellationToken cancellationToken)
         {
-            var item = new Item { Id = request.Id, Name = request.Name };  // mapping dto to domain
+            var item = new Item { Id = request.Id, Name = request.Name, Quantity = request.Quantity };  // mapping dto to domain
 
             var existingItem = await _itemRepository.GetItem(item.Name);
 
@@ -27,14 +25,6 @@ namespace Application.Commands
             }
 
             await _itemRepository.AddItem(item).ConfigureAwait(false);
-
-            var message = new ItemAddedMessage
-            {
-                Message = "New item is added!"
-            };
-
-            Console.WriteLine($"Sending message: {message.Message}");
-            await _endpointInstance.Send("ServiceBus", message);
         }
     }
 }

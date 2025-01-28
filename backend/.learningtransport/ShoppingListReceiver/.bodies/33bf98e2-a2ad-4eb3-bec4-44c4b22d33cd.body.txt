@@ -1,1 +1,0 @@
-{"Message":"New shopping list is added!"}

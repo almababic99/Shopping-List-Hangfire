@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "89a+15mTON0=",
+  "dgSpecHash": "Z4EdGUnOZj4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using ServiceBus\\Shopping-List-ServiceBus\\backend\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alma.babic\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\alma.babic\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

@@ -8,11 +8,9 @@ namespace Application.Commands
     public class CreateShoppingListCommandHandler : IRequestHandler<CreateShoppingListCommand>
     {
         private readonly IShoppingListRepository _shoppingListRepository;
-        private readonly IEndpointInstance _endpointInstance;
-        public CreateShoppingListCommandHandler(IShoppingListRepository shoppingListRepository, IEndpointInstance endpointInstance)
+        public CreateShoppingListCommandHandler(IShoppingListRepository shoppingListRepository)
         {
             _shoppingListRepository = shoppingListRepository;
-            _endpointInstance = endpointInstance;
         }
 
         public async Task Handle(CreateShoppingListCommand request, CancellationToken cancellationToken)
@@ -35,14 +33,6 @@ namespace Application.Commands
             };
 
             await _shoppingListRepository.AddShoppingList(shoppingList);
-
-            var message = new ShoppingListAddedMessage
-            {
-                Message = "New shopping list is added!"
-            };
-
-            Console.WriteLine($"Sending message: {message.Message}");
-            await _endpointInstance.Send("ServiceBus", message);
         }
     }
 }

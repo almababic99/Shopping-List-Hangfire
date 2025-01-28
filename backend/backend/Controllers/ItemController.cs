@@ -49,7 +49,7 @@ namespace API.Controllers
             if (itemDTO == null)
                 return BadRequest("Item data is null");
 
-            await _mediator.Send(new CreateItemCommand { Id = itemDTO.Id, Name = itemDTO.Name });
+            await _mediator.Send(new CreateItemCommand { Id = itemDTO.Id, Name = itemDTO.Name, Quantity = itemDTO.Quantity });
 
             return Ok();  
         }
@@ -72,7 +72,7 @@ namespace API.Controllers
                 return BadRequest();
             }
 
-            await _mediator.Send(new UpdateItemCommand { Id = id, Name = itemDTO.Name });
+            await _mediator.Send(new UpdateItemCommand { Id = id, Name = itemDTO.Name, Quantity = itemDTO.Quantity });
 
             return Ok();
         }
