@@ -76,6 +76,8 @@ namespace Infrastructure.Repositories
             if (itemToEdit != null)
             {
                 itemToEdit.Name = itemEntity.Name;   // Assign the edited name to the item to be saved
+                itemToEdit.Quantity = itemEntity.Quantity;  // Update quantity field
+
                 _shoppingListDbContext.Entry(itemToEdit).State = EntityState.Modified;   // mark entity as modified in Entity Framework
                 await _shoppingListDbContext.SaveChangesAsync();  // Save the changes to the database
             }

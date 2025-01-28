@@ -5,6 +5,7 @@ using Application.Services;
 using Application.Interfaces;
 using Application.Config;
 using Hangfire;
+using Application.Jobs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,10 @@ builder.Services.AddHangfire(configuration =>
     configuration.UseSqlServerStorage(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddHangfireServer();
+
+builder.Services.AddScoped<ItemQuantityUpdaterJob>();
+builder.Services.AddScoped<NewShoppingListAddedInfoJob>();
+builder.Services.AddScoped<WelcomeMessageJob>();
 
 builder.Services.AddCors(options =>    // Adding Cors to the application
 {
@@ -47,7 +52,9 @@ app.UseCors("AllowLocalhost");    // Applying added Cors to the application
 app.UseHangfireDashboard();
 app.MapHangfireDashboard();
 
-BackgroundJob.Enqueue(() => Console.WriteLine("Hello from Hangfire!"));
+RecurringJob.AddOrUpdate<ItemQuantityUpdaterJob>("item-quantity-updater", job => job.Execute(), Cron.Minutely);    // Recurring job that runs every minute 
+
+BackgroundJob.Schedule<WelcomeMessageJob>(job => job.Execute(), TimeSpan.FromSeconds(10));   // Delayed job delayed by 10 seconds
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

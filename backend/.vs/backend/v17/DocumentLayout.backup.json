@@ -3,40 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B262822-8436-43D9-A566-AA3AF16B91B5}|backend\\API.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0B262822-8436-43D9-A566-AA3AF16B91B5}|backend\\API.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{639F40A8-86C6-4A65-BBA1-70EC24B5ADA9}|Infrastructure\\Infrastructure.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\infrastructure\\repositories\\shoppinglistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{639F40A8-86C6-4A65-BBA1-70EC24B5ADA9}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\shoppinglistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532827A2-5C57-46DA-A0E6-5EA3B4B14F7D}|Application\\Application.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\application\\jobs\\newshoppinglistaddedinfojob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532827A2-5C57-46DA-A0E6-5EA3B4B14F7D}|Application\\Application.csproj|solutionrelative:application\\jobs\\newshoppinglistaddedinfojob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532827A2-5C57-46DA-A0E6-5EA3B4B14F7D}|Application\\Application.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\application\\jobs\\welcomemessagejob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532827A2-5C57-46DA-A0E6-5EA3B4B14F7D}|Application\\Application.csproj|solutionrelative:application\\jobs\\welcomemessagejob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{532827A2-5C57-46DA-A0E6-5EA3B4B14F7D}|Application\\Application.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\application\\jobs\\itemquantityupdaterjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{532827A2-5C57-46DA-A0E6-5EA3B4B14F7D}|Application\\Application.csproj|solutionrelative:application\\jobs\\itemquantityupdaterjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B262822-8436-43D9-A566-AA3AF16B91B5}|backend\\API.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B262822-8436-43D9-A566-AA3AF16B91B5}|backend\\API.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{639F40A8-86C6-4A65-BBA1-70EC24B5ADA9}|Infrastructure\\Infrastructure.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\infrastructure\\data\\shoppinglistdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{639F40A8-86C6-4A65-BBA1-70EC24B5ADA9}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\shoppinglistdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{639F40A8-86C6-4A65-BBA1-70EC24B5ADA9}|Infrastructure\\Infrastructure.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\infrastructure\\repositories\\shoppinglistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{639F40A8-86C6-4A65-BBA1-70EC24B5ADA9}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\shoppinglistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{532827A2-5C57-46DA-A0E6-5EA3B4B14F7D}|Application\\Application.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\application\\commands\\createitemcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{532827A2-5C57-46DA-A0E6-5EA3B4B14F7D}|Application\\Application.csproj|solutionrelative:application\\commands\\createitemcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{532827A2-5C57-46DA-A0E6-5EA3B4B14F7D}|Application\\Application.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\application\\commands\\createitemcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{532827A2-5C57-46DA-A0E6-5EA3B4B14F7D}|Application\\Application.csproj|solutionrelative:application\\commands\\createitemcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{639F40A8-86C6-4A65-BBA1-70EC24B5ADA9}|Infrastructure\\Infrastructure.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\infrastructure\\entitymodels\\itementity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{639F40A8-86C6-4A65-BBA1-70EC24B5ADA9}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\entitymodels\\itementity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B262822-8436-43D9-A566-AA3AF16B91B5}|backend\\API.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\backend\\dtomodels\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B262822-8436-43D9-A566-AA3AF16B91B5}|backend\\API.csproj|solutionrelative:backend\\dtomodels\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B314FE7-C7B3-446F-8A09-28FD327C384F}|Domain\\Domain.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\domain\\domainmodels\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B314FE7-C7B3-446F-8A09-28FD327C384F}|Domain\\Domain.csproj|solutionrelative:domain\\domainmodels\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{639F40A8-86C6-4A65-BBA1-70EC24B5ADA9}|Infrastructure\\Infrastructure.csproj|c:\\users\\alma.babic\\desktop\\projects\\shopping list using hangfire\\shopping-list-hangfire\\backend\\infrastructure\\repositories\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{639F40A8-86C6-4A65-BBA1-70EC24B5ADA9}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\backend\\appsettings.json",
-              "RelativeDocumentMoniker": "backend\\appsettings.json",
-              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\backend\\appsettings.json",
-              "RelativeToolTip": "backend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-28T09:57:57.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShoppingListDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Infrastructure\\Data\\ShoppingListDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Data\\ShoppingListDbContext.cs",
-              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Infrastructure\\Data\\ShoppingListDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\Data\\ShoppingListDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T09:57:46.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ShoppingListRepository.cs",
-              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Infrastructure\\Repositories\\ShoppingListRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ShoppingListRepository.cs",
-              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Infrastructure\\Repositories\\ShoppingListRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\ShoppingListRepository.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwBgAAADPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T09:30:57.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateItemCommand.cs",
-              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Application\\Commands\\CreateItemCommand.cs",
-              "RelativeDocumentMoniker": "Application\\Commands\\CreateItemCommand.cs",
-              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Application\\Commands\\CreateItemCommand.cs",
-              "RelativeToolTip": "Application\\Commands\\CreateItemCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T09:21:37.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ItemEntity.cs",
-              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Infrastructure\\EntityModels\\ItemEntity.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\EntityModels\\ItemEntity.cs",
-              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Infrastructure\\EntityModels\\ItemEntity.cs",
-              "RelativeToolTip": "Infrastructure\\EntityModels\\ItemEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T09:07:48.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Domain\\DomainModels\\Item.cs",
-              "RelativeDocumentMoniker": "Domain\\DomainModels\\Item.cs",
-              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Domain\\DomainModels\\Item.cs",
-              "RelativeToolTip": "Domain\\DomainModels\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T09:06:48.811Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ItemDTO.cs",
-              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\backend\\DTOModels\\ItemDTO.cs",
-              "RelativeDocumentMoniker": "backend\\DTOModels\\ItemDTO.cs",
-              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\backend\\DTOModels\\ItemDTO.cs",
-              "RelativeToolTip": "backend\\DTOModels\\ItemDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T09:06:04.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CreateItemCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Application\\Commands\\CreateItemCommandHandler.cs",
-              "RelativeDocumentMoniker": "Application\\Commands\\CreateItemCommandHandler.cs",
-              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Application\\Commands\\CreateItemCommandHandler.cs",
-              "RelativeToolTip": "Application\\Commands\\CreateItemCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T09:00:00.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\backend\\Program.cs",
               "RelativeDocumentMoniker": "backend\\Program.cs",
               "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\backend\\Program.cs",
               "RelativeToolTip": "backend\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAmwC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAmwCQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T12:50:40.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemQuantityUpdaterJob.cs",
+              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Application\\Jobs\\ItemQuantityUpdaterJob.cs",
+              "RelativeDocumentMoniker": "Application\\Jobs\\ItemQuantityUpdaterJob.cs",
+              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Application\\Jobs\\ItemQuantityUpdaterJob.cs",
+              "RelativeToolTip": "Application\\Jobs\\ItemQuantityUpdaterJob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:22:02.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NewShoppingListAddedInfoJob.cs",
+              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Application\\Jobs\\NewShoppingListAddedInfoJob.cs",
+              "RelativeDocumentMoniker": "Application\\Jobs\\NewShoppingListAddedInfoJob.cs",
+              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Application\\Jobs\\NewShoppingListAddedInfoJob.cs",
+              "RelativeToolTip": "Application\\Jobs\\NewShoppingListAddedInfoJob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T13:46:28.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WelcomeMessageJob.cs",
+              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Application\\Jobs\\WelcomeMessageJob.cs",
+              "RelativeDocumentMoniker": "Application\\Jobs\\WelcomeMessageJob.cs",
+              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Application\\Jobs\\WelcomeMessageJob.cs",
+              "RelativeToolTip": "Application\\Jobs\\WelcomeMessageJob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T14:13:11.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Infrastructure\\Repositories\\ItemRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ItemRepository.cs",
+              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Infrastructure\\Repositories\\ItemRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\ItemRepository.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwE4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T11:37:14.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShoppingListRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Infrastructure\\Repositories\\ShoppingListRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ShoppingListRepository.cs",
+              "ToolTip": "C:\\Users\\alma.babic\\Desktop\\Projects\\Shopping List using Hangfire\\Shopping-List-Hangfire\\backend\\Infrastructure\\Repositories\\ShoppingListRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\ShoppingListRepository.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwE4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T13:48:53.68Z",
               "EditorCaption": ""
             }
           ]

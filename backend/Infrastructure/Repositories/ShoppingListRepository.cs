@@ -1,5 +1,7 @@
 ﻿using Application.Interfaces;
+using Application.Jobs;
 using Domain.DomainModels;
+using Hangfire;
 using Infrastructure.Data;
 using Infrastructure.EntityModels;
 using Infrastructure.Mappers;
@@ -10,10 +12,12 @@ namespace Infrastructure.Repositories
     public class ShoppingListRepository : IShoppingListRepository
     {
         private readonly ShoppingListDbContext _shoppingListDbContext;
+        private readonly IBackgroundJobClient _backgroundJobClient;
 
-        public ShoppingListRepository(ShoppingListDbContext shoppingListDbContext)  // The constructor takes an instance of ShoppingListDbContext as a parameter and assigns it to a private field _shoppingListDbContext. This is a Dependency Injection
+        public ShoppingListRepository(ShoppingListDbContext shoppingListDbContext, IBackgroundJobClient backgroundJobClient)  // The constructor takes an instance of ShoppingListDbContext as a parameter and assigns it to a private field _shoppingListDbContext. This is a Dependency Injection
         {
             _shoppingListDbContext = shoppingListDbContext;
+            _backgroundJobClient = backgroundJobClient;
         }
 
         public async Task<IEnumerable<ShoppingList>> GetShoppingLists()   // get all shopping lists with Shopper and Items included (shopper and item names)                                                       
@@ -75,6 +79,9 @@ namespace Infrastructure.Repositories
             }
 
             await _shoppingListDbContext.SaveChangesAsync();    // saving shopping list items to database
+
+            // Enqueue or trigger the job after saving the shopping list and items
+            _backgroundJobClient.Enqueue<NewShoppingListAddedInfoJob>(job => job.Execute());    // Fire and forget job
         }
 
         public async Task<int> getCountOfItemInShoppingList(int itemId)   // count the number of item in shopping list items  (One item can be found in maximum of 3 shopping lists)
