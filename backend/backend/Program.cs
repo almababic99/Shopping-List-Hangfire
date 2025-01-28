@@ -4,6 +4,7 @@ using Infrastructure.Repositories;
 using Application.Services;
 using Application.Interfaces;
 using Application.Config;
+using Hangfire;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,11 @@ builder.Services.AddScoped<IShoppingListService, ShoppingListService>();        
 builder.Services.AddMediatR(cf => cf.RegisterServicesFromAssemblies(typeof(ApplicationAssembly).Assembly));
 
 builder.Services.AddControllers();
+
+builder.Services.AddHangfire(configuration =>
+    configuration.UseSqlServerStorage(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddHangfireServer();
 
 builder.Services.AddCors(options =>    // Adding Cors to the application
 {
@@ -37,6 +43,11 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 app.UseCors("AllowLocalhost");    // Applying added Cors to the application
+
+app.UseHangfireDashboard();
+app.MapHangfireDashboard();
+
+BackgroundJob.Enqueue(() => Console.WriteLine("Hello from Hangfire!"));
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
